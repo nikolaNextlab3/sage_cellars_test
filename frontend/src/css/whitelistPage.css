@@ -1,0 +1,138 @@
+.whitelistPageContent{
+    min-height: 600px;
+    margin-left: 4rem;
+    margin-top: 3rem;
+    text-align: center;
+    background-color: #ffffff;
+    color: #e2ac5d;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 10rem;
+    border-width:5px; 
+    border-style: solid ;
+    border-color: #370617;padding: 1rem;
+
+}
+.whitelistPage{
+    margin-top: 15rem;
+}
+
+
+.whitelistPagePar{
+    color: black;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    }
+.whitelistPageTitle{
+    color: #370617;
+}
+
+.form-control{
+    border-color: #370617;
+    border-width:3px; 
+    margin-bottom: 1rem;
+    margin-top: 2rem !important;
+    width: 90%;
+    height: 4rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footerWhitelist{
+    border-width:5px !important; 
+    border-top: solid ;
+    border-color: #370617;
+}
+
+.whitelistPageButton{
+    margin-top: 5rem !important;
+    background-color: #370617 !important;
+    color: white !important;
+    width: 30rem !important;
+    height: 5rem;
+}
+.whitelistImage{
+    width: 49rem;
+}
+.whitelistImgDiv{
+    margin-left: auto;
+    margin-right: auto;
+}
+.row{
+    --bs-gutter-x : 0 !important;
+}
+@media only screen and (max-width: 1400px) {
+    .whitelistImage{
+        width: 42rem;
+        margin-top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .whitelistImage{
+        display: none;
+    }
+    .whitelistPageContent{
+        width: 90% !important;
+        padding-top: 1rem !important;
+        min-height: 500px !important;
+        margin-left: auto;
+        margin-right: auto;
+        
+        margin-top: 0rem;
+
+    }
+    .whitelistPageButton{
+        width:20rem !important;
+    }
+    .whitelistPage{
+        margin-top: 15rem !important;
+    }
+    .whitelistPageButton{
+        margin-top: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .whitelistImage{
+        display: none;
+    }
+    .whitelistPageContent{
+        width: 90% !important;
+        padding-top: 1rem !important;
+        min-height: 470px !important;
+        padding-bottom: 0 !important;
+        
+
+    }
+    .whitelistPageTitle{
+        font-size: 2rem;
+        
+    }
+    .whitelistPagePar{
+        font-size: 1rem;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem ;
+    }
+    .whitelistPageButton{
+        width:10rem !important;
+        height: 3rem !important;
+        padding: 0.1rem !important;
+    }
+    .whitelistPage{
+        margin-top: 15rem !important;
+    }
+    .whitelistPageButton{
+        margin-top: 0rem !important;
+    }
+    
+    .form-control{
+        font-size: 1.5rem !important;
+        width: 60% !important;
+        height: 50% !important;
+        margin-top: 1rem !important;
+    }
+}

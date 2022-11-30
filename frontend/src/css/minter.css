@@ -1,0 +1,325 @@
+:root {  
+    --toastify-toast-width: 30rem;
+    --toastify-toast-background: #fff;
+    --toastify-toast-min-height: 10rem;
+    --toastify-toast-max-height: 800px;
+    --toastify-font-size: 800px;
+}
+
+
+
+.MintPage{    
+    
+    padding: 0;
+    width: 100%;
+}
+
+.web3Notinstall{
+    text-align: center;
+}
+.paragraphe{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.MintButton{
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: black !important;
+    background-color: white!important;
+    color: black !important;
+    width: 13rem !important;
+    height: 4rem;
+    border-radius: 0% !important;
+    font-weight: bold !important;
+    font-size: 1.5rem !important;
+    margin-right: 5rem !important;
+    
+}
+
+.mintButtonTitle{
+    font-size: 3rem;
+}
+.carouselWithDescr{
+    background: rgb(88,8,57);
+    background: linear-gradient(142deg, rgba(88,8,57,1) 0%, rgba(22,2,14,1) 100%);
+    padding: 3rem;
+    color : white;
+    position: relative;
+    z-index: 3;
+    margin-right: 0 !important;
+    
+    
+}
+.carousselTitle{
+    text-align: center;
+    font-size: 3.5rem;
+    padding-bottom: 2rem;
+}
+.gallerie{
+    margin-right: auto;
+}
+
+.informationText{
+    font-size: 3rem;
+    color: white !important;
+}
+.informationList{
+    color: #FAEBC9 ;
+}
+
+.informationTitle{
+    width: 15rem;
+    
+    padding-top: auto !important;
+    padding-bottom: auto !important;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.titleDescription{
+    color: #e2ac5d;
+    font-size: 3rem;
+}
+
+.logoDescription{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 2.5rem;
+  }
+.itemList{
+    font-size: 1.5rem;
+}
+
+.mintingSection{
+    background-color:white;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    width: 100% !important;
+    height: 78rem;
+}
+.sliderContent{
+    position: relative;
+    top: -30rem;
+}
+.round3{
+    width:30rem !important ;
+    height:30rem !important;
+    z-index:0 ;
+    float: right; 
+    position: relative !important;
+    Top: 60rem !important;
+    left: -70%!important;
+}
+.round4{
+    width:30rem !important ;
+    height:30rem !important;
+    z-index:0 ;
+    float: right; 
+    position: relative !important;
+    Top: -20rem !important;
+    Left:10%!important;
+}
+
+.separator{
+    height: 15px;
+    background: rgb(226,172,93);
+    background: linear-gradient(142deg, rgba(226,172,93,1) 0%, rgba(250,235,201,1) 100%);
+    z-index: 10 !important;
+    width: 100%;
+}
+.separator2{
+    height: 15px;
+    background: rgb(226,172,93);
+    background: linear-gradient(142deg, rgba(226,172,93,1) 0%, rgba(250,235,201,1) 100%);
+    z-index: 10 !important;
+    width: 100%;
+    position: relative;
+}
+
+/* home */
+.home{
+    margin-top: 10rem;
+}
+
+
+.boxButton{
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    margin-top: 5rem;
+    margin-left: 15% ;
+    margin-right: 15% ;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 20rem;
+    background-color: #ffffffdb
+    
+}
+
+
+
+/* right round */
+@media (min-width: 1199px) and (max-width: 1500px) {
+    .round4{
+        width:30rem !important ;
+        height:30rem !important;
+        z-index:0 ;
+        float: right; 
+        position: relative !important;
+        Top: -20rem !important;
+        Left:25%!important;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .round4{
+        display: none;
+    }
+    
+    .col-6{
+        width: 50% !important;
+    }
+   
+    .sliderContent{
+        width: 100%;
+    }
+    .information{
+        padding-left: 5% !important;
+    }
+    .MintButton{
+        width: 6rem !important;
+        margin-right: 2.5%!important;
+        margin-left: 2.5%;
+        padding : 0 !important;
+        font-size: 1.2rem !important;
+    }  
+    .contractAddress{
+        font-size: 0.8rem;
+    }
+  }
+
+
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    .sliderContent{
+        width: 100%;
+    }
+    .round4{
+        display: none;
+    }
+    .MintButton{
+        width: 11rem !important;
+        margin-right: 2.5%!important;
+        margin-left: 2.5%;
+        padding : 0 !important;
+    }  
+}
+
+@media only screen and (min-width: 1200px) {
+    .sliderContent{
+        width: 100%;
+    }
+    .col-6{
+        width: 40% !important;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 425px) {
+    .col-6{
+        width: 100% !important;
+    }
+    .information{
+        text-align: center;
+    }
+    .informationTitle{
+        /* margin: 3rem; */
+        margin-left: 4rem;
+    }
+    .informationText{
+        font-size: 2.5rem;
+    }
+    .itemList{
+        font-size: 1.5rem;
+        padding-bottom: 0.4rem;
+    }
+    
+    .gallerie{
+        margin-left: 0.5rem;
+    }
+    .sliderContent{
+        margin-right: 0%  !important;
+        margin-left: 0.2rem !important;
+    }
+    .sliderApp{
+        padding-top: 1rem;
+    }
+    .MintButton{
+        width: 15rem !important;
+        margin-bottom: 1rem !important;
+    }  
+    .boxButton{
+        margin-top: 1rem !important;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .contractAddress{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    .informationTitle{
+        margin-left: 3rem;
+        
+    }
+    .informationText{
+        font-size: 2rem !important;
+    }
+    .itemList{
+        font-size: 1.3rem !important;
+        padding-bottom: 0.3rem;
+    }
+    .carousselTitle{
+        font-size: 3rem;
+    }
+    .titleDescription{
+        font-size: 2.5rem;
+    }
+    .information{
+        margin-top: 1.5rem !important;
+    }
+    .sliderContent{
+        margin-right: 0%  !important;
+        
+        /* padding-left: 2rem !important; */
+    }
+    .colSlide{
+        padding-left: 0% !important;
+        padding-right: 0% !important;
+        font-size: 2px !important;
+    }
+    .titleSlide{
+        font-size: 1.8rem;
+    }
+    .sliderContent{
+        width: 98%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .carousselTitle{
+        padding-bottom: 0;
+        font-size: 2.5rem;
+    }
+    .informationTitle{
+        margin-left: 1rem;
+    }
+    .informationText{
+        font-size: 2.2rem;
+    }
+  }

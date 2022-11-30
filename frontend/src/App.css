@@ -1,0 +1,234 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* @font-face {
+  font-family: 'helveticaregular';
+  src: url('./fonts/helvetica-webfont.woff2') format('woff2'),
+       url('./fonts/helvetica-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+} */
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.disabled-link {
+  pointer-events: none;
+}
+
+
+
+/* big first container for main page  */
+.BiggerContainer{
+  margin-top: 5rem;
+  width: 100%;
+} 
+
+.AllContainer{
+  margin-top : 7rem;
+
+}
+
+
+
+
+/* Navbar css */
+
+.navbar-all{
+  margin-top: 2.5rem;
+  border-radius: 15px;
+  z-index: 3 !important;
+}
+
+.Navbar-socials {
+  height: calc(20px + 3.5vmin);
+  width: calc(20px + 3.5vmin);
+  margin-right: 4vh;
+}
+
+.Navbar-button {
+  align-items: right;
+}
+
+.navBarCss{
+  background-color: #370617;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+.Navbar-picture-logo { 
+  height: calc(40px + 2vmin);
+  width: calc(40px + 2vmin);
+  margin-bottom: 2vh;
+}
+
+.metamask{
+  width: 4rem;
+}
+.btnWarning{
+  width: 15rem;
+  background-color: rgb(255, 0, 0) !important;
+  color: white !important;  
+  border-radius: 0 !important;  
+}
+.buyButton{  
+  font-size: 1rem !important;
+  width: 12rem;
+}
+.ConnectButton{
+  border-radius: 0 !important;
+  width: 12rem;
+  background-color: white !important;
+  color: black !important;  
+  font-size: 1rem !important;
+}
+.ConnectButton2{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  width: 20rem;
+  background-color: rgb(129, 129, 129) !important;
+  margin-bottom: 1rem !important;
+  color: white !important;  
+  border-radius: 15px !important;
+  text-align: left !important;
+}
+.logoModal{
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-title{
+  font-size: 2rem !important;
+}
+.modal-title2{
+  font-size: 1.3rem !important;
+}
+.modal-header{
+  border-bottom: 0 !important;
+}
+
+
+.nav-item{
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+  margin-left: 1.5rem;
+}
+.nav-link{
+  color:white !important;
+  font-size: 1.2rem;
+}
+.logoTop{
+  width: 12rem;
+  margin-left: 3rem;
+
+}
+.modal-backdrop.fade.show{
+  z-index: 200 !important;
+}
+
+.modal-content {
+  background-color: #4b4b4b !important;
+  color: white;
+  border-radius: 15px !important;
+  margin-top: 10rem !important;
+  padding-bottom: 2.5rem !important;
+}
+.btnNavbar{
+  color: white;
+  font-size: 2rem;
+}
+.fixed-top.navBarCss {
+  top: 4rem !important;
+}
+.advise{
+  height: 4rem !important;
+  background-color: rgb(93, 93, 233);
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 1.2rem;
+}
+.fixed-top.advise{
+  top: 0 !important;
+}
+
+@media only screen and (max-width: 1199px) {
+  .btnWarning{
+    margin-bottom: 1rem !important;
+  }
+  .fixed-top.navBarCss {
+    top: 5rem !important;
+  }
+  .advise{
+    height: 5rem !important;    
+    font-size: 1.1rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .logoTop{
+    width: 15rem;
+    margin-left: 1rem;  
+  }
+  .fixed-top.navBarCss {
+    top: 6rem !important;
+  }
+  .advise{
+    height: 6rem !important;    
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1.6rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+@media only screen and (max-width: 467px) {
+  .logoTop{
+    width: 13rem;
+    margin-left: 1rem;  
+  }
+  .fixed-top.navBarCss {
+    top: 6rem !important;
+  }
+  .advise{
+    height: 6rem !important;    
+    font-size: 1rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.6rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .logoTop{
+    width: 13rem;
+    margin-left: 1rem;  
+  }
+  .fixed-top.navBarCss { 
+    top: 6rem !important;
+  }
+  .advise{
+    height: 6rem !important;    
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1.2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.loader{
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  
+}

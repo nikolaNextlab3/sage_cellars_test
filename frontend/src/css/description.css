@@ -1,0 +1,280 @@
+.descriptionTxt{
+    margin-top : 10rem;
+    padding-left: 8rem;
+  }
+.description{
+    padding-left: 5rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 7rem;
+    top: -30rem;
+}
+.descriptionContent{
+    height: 50rem;
+}
+  
+.imgText{
+    /* padding-top: 6rem; */
+    max-width: 700px !important;  
+    margin-top: 1.5rem;
+
+}
+
+.descriptionText{
+    font-size: 1.3rem;
+
+}
+
+.learnButton{
+    background-color: #370617 !important;
+    color: white !important;
+    width: 30rem !important;
+    height: 5rem;
+}
+.animation{
+    padding-top: 3rem;
+    padding-left: 5rem;
+    position: relative;
+    width: 50rem !important;
+}
+.round5{
+    width:30rem !important ;
+    height:30rem !important;
+    z-index:-1 ;
+    float: right; 
+    position: relative !important;
+    Top: -20rem !important;
+    /* Top: -20% !important; */
+    Left: -35%!important;
+}
+.round1{
+    width:30rem !important ;
+    height:30rem !important;
+    z-index:-1 ;
+    float: right; 
+    position: relative !important;
+    Top: 35rem !important;
+    left: -60%!important;
+}
+.round2{
+    width:30rem !important ;
+    height:30rem !important;
+    z-index:-1 ;
+    float: right; 
+    position: relative !important;
+    Left: 30rem!important;
+    top:-5rem;
+}
+/* right round */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .round2{
+        width:30rem !important ;
+        height:30rem !important;
+        z-index:-1 ;
+        float: right; 
+        position: relative !important;
+        Left: 25rem!important;
+    }
+
+}
+@media only screen and (min-width: 1200px) {
+    
+    .description{
+        margin-right: auto !important;
+        margin-left: auto !important;
+        padding-right: 0% !important;
+        min-width: none;
+        margin-top: 25rem;        
+        position: relative;
+
+    }
+    
+    .animation{
+        padding-top: 0;
+        padding-left: 0;
+    }
+    
+    .learnButton{
+        width: 50% !important;
+    }
+    .descriptionContent{
+        width: 100%;
+    }
+    .container{
+        /* max-width: 1200px !important; */
+        padding-left: 1rem !important;
+    }
+  }
+
+@media only screen and (max-width: 1199px) {
+    /* For mobile phones: */
+    .descriptionContent{
+        margin-bottom: 25%;
+    }
+    .description{        
+        /* padding-left: 9rem !important; */
+        margin-right: auto !important;
+        margin-left: auto !important;
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
+        position :absolute;
+        top: 0;
+        margin-top: 10rem !important;
+        margin-bottom: 0 !important;
+    }
+    .round1{
+        width:30rem !important ;
+        height:30rem !important;
+        z-index:-1 ;
+        float: right; 
+        position: relative !important;
+        Top: 0rem !important;
+        left: -90%!important;
+
+    }
+    
+    .round2{
+        display: none;
+    }
+    .animation{
+        padding-top: 0;
+        padding-left: 0;
+        width: 60% !important;
+    }
+    .learnButton{
+        margin-left: 25% !important; 
+        width: 50% !important;
+    }
+    .information{
+        padding-left: 2rem !important;
+    }
+    .imgText{
+        max-width: 1200px !important;
+        padding-top: 6rem;
+    }
+    .container{
+        max-width: 1200px !important;
+    }
+    
+  }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .descriptionContent{
+        margin-bottom: 25%;
+    }
+    .descriptionText{
+        font-size: 1.3rem !important;
+
+    }
+    .description{
+        margin-right: auto !important;
+        margin-left: auto !important;
+        padding-right: 1rem !important;        
+        padding-left: 1rem !important;    
+        margin-top: 10rem !important;
+        position :absolute;
+        top: 0;
+    }
+    .round1{
+        display: none;
+    }
+    .round5{
+        display: none;
+    }
+    .round2{
+        display: none;
+    }
+    .animation{
+        padding-top: 0;
+        padding-left: 0;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 35rem !important;
+        width: 80% !important;
+    }
+    [class*="col-"] {
+        width: 100% !important;
+      }
+    .learnButtonDiv{
+        margin-left: auto !important; 
+        margin-right: auto !important; 
+        width: 100% !important;
+    }
+    .imgText{
+        padding-top: 6rem;
+    }
+  }
+
+@media only screen and (max-width: 425px) {
+    .descriptionContent{
+        margin-bottom: 0%;
+        height: 45rem;
+    }
+    .description{
+        margin-right: auto !important;
+        margin-left: auto !important;
+        padding-right: 1rem !important;        
+        padding-left: 1rem !important;    
+        margin-top: 10rem !important;
+        position :relative;
+        top: 0;
+    }
+    .round1{
+        display: none;
+    }
+    .round5{
+        display: none;
+    }
+    .round2{
+        display: none;
+    }
+    .animation{
+        padding-top: 0;
+        padding-left: 0;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 95% !important;
+    }
+    [class*="col-"] {
+        width: 100% !important;
+      }
+    .learnButton{
+        margin-left: 25% !important;        
+        font-size: 1rem !important;
+        height: 20% !important;
+    }
+    .learnButtonDiv{
+        margin-left: auto !important; 
+        margin-right: auto !important; 
+        width: 80% !important;
+    }
+    .descriptionText{
+        font-size: 1rem !important;
+
+    }    
+    .imgText{
+        padding-top: 6rem;
+    }
+}
+
+@media only screen and (max-height: 757px) and (min-width: 375px) {
+    .animation{
+        padding-top: 0;
+        padding-left: 0;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 70% !important;
+        text-align: center;
+    }
+    .imgText{
+        padding-top: 6rem;
+    }
+    
+}
+@media only screen and (min-width: 2160px) {
+    .description{
+        top: 0rem;
+        right: -35rem;
+    }
+}

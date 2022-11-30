@@ -1,0 +1,34 @@
+.whitelistContent{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #370617;
+    color: #e2ac5d;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    z-index: 10 !important;
+    position: relative;
+    width: 100%;
+
+}
+
+.whitelistPar{
+    color: #faebc9;
+    font-size: 1.5rem;
+}
+
+.whitelistButton{
+    background-color: white !important;
+    color: black !important;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.5rem !important;
+}
+
+@media only screen and (max-width: 320px) {
+    .whitelistButton{
+        width: 12rem;
+        height: 3rem;
+        font-size: 1rem !important;
+    }
+  }

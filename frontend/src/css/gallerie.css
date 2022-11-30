@@ -1,0 +1,33 @@
+.gallerieComponent{
+  border-width:5px; 
+    border: solid ;
+    border-color: white;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .gallerieComponent{
+    width: 60% !important;
+    height: 400px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .carousselTitle{
+    padding-bottom: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .gallerieComponent{
+    width: 90% !important;
+    height: 400px !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .carousselTitle{
+    padding-bottom: 0 !important;
+  }
+  .gallerie{
+    margin-left: 0 !important;
+  }
+}
