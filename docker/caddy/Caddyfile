@@ -1,7 +1,7 @@
 {
-  email corentda@hotmail.fr
+  email nikola.nextlab3@gmail.com
 }
 
-www.sagecellars.io {
-  reverse_proxy 192.168.10.6:4000
+www.mcnpoc2.xyz {
+  reverse_proxy 178.79.152.250
 }

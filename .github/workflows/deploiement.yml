@@ -2,7 +2,7 @@ name: deployement
 on:
   push:
     branches:
-      - develop
+      - master
 
 jobs:
   VPS-deploiement:
