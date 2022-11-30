@@ -24,7 +24,7 @@ function App() {
   return (
 
     <section className='fontstyled'>
-      <header>
+      <header>  
         <div className='advise fixed-top'>
           <span className="align-middle">This website is a demo version only. It is intended to be a Proof of Concept for physical NFTs linked to different blockchains. Please do not use this website!</span>
         </div>
