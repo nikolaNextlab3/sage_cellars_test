@@ -37,7 +37,7 @@ function App() {
               <Routes>
                   <Route path="/" element={<Mint setNetworkError={setNetworkError} networkError={networkError} autentification={autentification} setAutentification={setAutentification} setAccount={setAccount} setAvailableAccount={setAvailableAccount} setLoading={setLoading} loading={loading} availableAccount={availableAccount} />}/>
                   <Route path="/WhitelistPage" element={<WhitelistPage></WhitelistPage>}/>
-              </Routes>     
+              </Routes>      
         </Router>
     </section>
 
