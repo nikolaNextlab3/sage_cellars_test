@@ -17,8 +17,9 @@ import Web3Modal from 'web3modal';
 import Web3 from "web3";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 
-const contractAddressHardhat = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 const contractAddressJuneoGold = "0x9f40adAB770aaAE54B6aeC33BF16bE7e5B9e4212";
+const contractAddressBinance = "0x67DBA6241aEC24199c5602b83f6b3367f5fcd06a";
+const contractAddressGoerli = "0x22880DDAFF076Fa1653B7cc643e60805679A47a4";
 
 const Minter = ({setNetworkError, networkError, setAccount, setAvailableAccount, setLoading, loading, availableAccount})  => {
     const netId = 56;       
@@ -50,20 +51,23 @@ const Minter = ({setNetworkError, networkError, setAccount, setAvailableAccount,
             const signer = provider.getSigner();
 
             try{
-                if (chain === "JUNE_GOLD"){ 
-
-                    console.log(address);
-
+                if (chain === "GLD1"){ 
                     const TGE721Contract =  new ethers.Contract(contractAddressJuneoGold, abi, signer);  
                     let TGE721ContractTransactionResponse = await TGE721Contract.safeMint(address);
                     let TGE721ContractTransactionRecipient = await TGE721ContractTransactionResponse.wait();
 
                     toast.success("Successfull Mint", optionsToast);
                     setIsMinting(false);                  
-            
                 }
-                else if(chain ===  "Local"){
-                    const TGE721Contract = new ethers.Contract(contractAddressHardhat, abi, signer);
+                else if(chain ===  "BNBt"){
+                    const TGE721Contract = new ethers.Contract(contractAddressBinance, abi, signer);
+                    let TGE721ContractTransactionResponse = await TGE721Contract.safeMint(address);
+                    let TGE721ContractTransactionRecipient = await TGE721ContractTransactionResponse.wait();
+
+                    toast.success("Successfull Mint", optionsToast);
+                    setIsMinting(false);
+                }else{
+                    const TGE721Contract = new ethers.Contract(contractAddressGoerli, abi, signer);
                     let TGE721ContractTransactionResponse = await TGE721Contract.safeMint(address);
                     let TGE721ContractTransactionRecipient = await TGE721ContractTransactionResponse.wait();
 
@@ -106,7 +110,7 @@ const Minter = ({setNetworkError, networkError, setAccount, setAvailableAccount,
     const mint = async (chain) => {
         if(localStorage.getItem("method")==="Metamask"){
             if (typeof window.ethereum !== 'undefined') {    
-                if(chain ==="JUNE_GOLD"){
+                if(chain ==="GLD1"){
                     const modal = new Web3Modal({
                         network: "https://api2.mcnpoc3.xyz:9650/ext/bc/GOLD/rpc",
                         cacheProvider: true,
@@ -121,19 +125,34 @@ const Minter = ({setNetworkError, networkError, setAccount, setAvailableAccount,
                         toast.error("Wrong network. Please switch to the Juneo Gold Chain network!", optionsToast);
                     }
                 }
-                else if(chain === "LOCAL"){
+                else if(chain === "BNBt"){
                     const modal = new Web3Modal({
-                        network: "http://127.0.0.1:8548/",
+                        network: "https://data-seed-prebsc-1-s1.binance.org:8545",
                         cacheProvider: true,
                     });
                     const connection = await modal.connect();
                     const provider = new ethers.providers.Web3Provider(connection);
                     const { chainId } = await provider.getNetwork();
 
-                    if(chainId === 31337){
+                    if(chainId === 97){
                         mintParam(window.ethereum.selectedAddress, provider, chain);
                     }else{
-                        toast.error("Wrong network. Please switch to the Hardhat local network!", optionsToast);
+                        toast.error("Wrong network. Please switch to the Binance Smart Chain Testnet!", optionsToast);
+                    }
+                }
+                else {
+                    const modal = new Web3Modal({
+                        network: "https://goerli.infura.io/v3/",
+                        cacheProvider: true,
+                    });
+                    const connection = await modal.connect();
+                    const provider = new ethers.providers.Web3Provider(connection);
+                    const { chainId } = await provider.getNetwork();
+
+                    if(chainId === 5){
+                        mintParam(window.ethereum.selectedAddress, provider, chain);
+                    }else{
+                        toast.error("Wrong network. Please switch to the Goerli test network!", optionsToast);
                     }
                 }
             }
@@ -277,12 +296,12 @@ const Minter = ({setNetworkError, networkError, setAccount, setAvailableAccount,
                                 <div className='boxButton buttonMint '>
                                         <h1 className='mintButtonTitle'>Mint now !</h1>
                                         <p>Be the first to mint</p>
-                                        <a className='contractAddress' href="https://bscscan.com/address/0x02cc17c1fa3c9a95ec841c2d6c96fc9cd233b779" target="_blank">0x02cc17c1fa3c9a95ec841c2d6c96fc9cd233b779</a>
                                         <p>Sage Cellars- Fine wine collection of NFTS!</p>
                                         { !isMinting &&
                                             <div>
-                                                <Button onClick={() => mint("JUNE_GOLD")} size="big"  className='btn btn-primary btn-lg MintButton'>JUNE GOLD</Button>
-                                                <Button onClick={() => mint("LOCAL")} size="big"  className='btn btn-primary btn-lg MintButton'>HARD HAT</Button>
+                                                <Button onClick={() => mint("GLD1")} size="big"  className='btn btn-primary btn-lg MintButton'>GLD1</Button>
+                                                <Button onClick={() => mint("BNBt")} size="big"  className='btn btn-primary btn-lg MintButton'>BNBt</Button>
+                                                <Button onClick={() => mint("GoerliETH")} size="big"  className='btn btn-primary btn-lg MintButton'>GoerliETH</Button>
                                             </div>
                                         }
                                         { isMinting &&
